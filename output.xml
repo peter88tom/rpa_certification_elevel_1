@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230517 13:26:23.697" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="/opt/homebrew/var/www/robotic_process_automation/rpa_certification_elevel_1/tasks.robot">
+<test id="s1-t1" name="Insert the sales data for the week and export it as a PDF" line="8">
+<kw name="Open the intranet website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230517 13:26:24.630" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230517 13:26:24.634" level="INFO">Executing: /Users/Shared/robocorp/ht/ddea499_b1f3c24_1c0bc041/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --output json</msg>
+<msg timestamp="20230517 13:26:25.546" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230517 13:26:25.718" level="INFO">Downloaded webdriver to: /Users/r00t/.robocorp/webdrivers/.wdm/drivers/chromedriver/mac64/113.0.5672.63/chromedriver</msg>
+<msg timestamp="20230517 13:26:25.720" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230517 13:26:27.280" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg timestamp="20230517 13:26:27.283" level="INFO">Executing: /Users/Shared/robocorp/ht/ddea499_b1f3c24_1c0bc041/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager --browser firefox --output json</msg>
+<msg timestamp="20230517 13:26:30.126" level="INFO">Created Firefox browser with arguments: </msg>
+<msg timestamp="20230517 13:26:30.127" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: unknown error: cannot find Chrome binary
+Stacktrace:
+0   chromedriver                        0x00000001026ef8ac chromedriver + 4257964
+1   chromedriver                        0x00000001026e7f40 chromedriver + 4226880
+2   chromedriver                        0x00000001023249d4 chromedriver + 281044
+3   chromedriver                        0x000000010234b778 chromedriver + 440184
+4   chromedriver                        0x0000000102349c38 chromedriver + 433208
+5   chromedriver                        0x00000001023873dc chromedriver + 685020
+6   chromedriver                        0x0000000102386c08 chromedriver + 683016
+7   chromedriver                        0x000000010235398c chromedriver + 473484
+8   chromedriver                        0x000000010235498c chromedriver + 477580
+9   chromedriver                        0x00000001026ae900 chromedriver + 3991808
+10  chromedriver                        0x00000001026b2354 chromedriver + 4006740
+11  chromedriver                        0x00000001026b2940 chromedriver + 4008256
+12  chromedriver                        0x00000001026b833c chromedriver + 4031292
+13  chromedriver                        0x00000001026b2f34 chromedriver + 4009780
+14  chromedriver                        0x000000010268b490 chromedriver + 3847312
+15  chromedriver                        0x00000001026d09f4 chromedriver + 4131316
+16  chromedriver                        0x00000001026d0b4c chromedriver + 4131660
+17  chromedriver                        0x00000001026e1230 chromedriver + 4198960
+18  libsystem_pthread.dylib             0x000000018ef2506c _pthread_start + 148
+19  libsystem_pthread.dylib             0x000000018ef1fe2c thread_start + 8
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;Message: unknown error: cannot find Chrome binary
+Stacktrace:
+0   chromedriver                        0x0000000104b2c598 chromedriver + 4973976
+1   chromedriver                        0x0000000104b23913 chromedriver + 4938003
+2   chromedriver                        0x00000001046e0cd6 chromedriver + 470230
+3   chromedriver                        0x000000010470d086 chromedriver + 651398
+4   chromedriver                        0x000000010470ab79 chromedriver + 641913
+5   chromedriver                        0x00000001047522a6 chromedriver + 934566
+6   chromedriver                        0x000000010475175f chromedriver + 931679
+7   chromedriver                        0x0000000104748793 chromedriver + 894867
+8   chromedriver                        0x000000010471621f chromedriver + 688671
+9   chromedriver                        0x000000010471756e chromedriver + 693614
+10  chromedriver                        0x0000000104ae6bb7 chromedriver + 4688823
+11  chromedriver                        0x0000000104aeba51 chromedriver + 4708945
+12  chromedriver                        0x0000000104af240f chromedriver + 4736015
+13  chromedriver                        0x0000000104aec91a chromedriver + 4712730
+14  chromedriver                        0x0000000104abf87c chromedriver + 4528252
+15  chromedriver                        0x0000000104b0bf28 chromedriver + 4841256
+16  chromedriver                        0x0000000104b0c0a7 chromedriver + 4841639
+17  chromedriver                        0x0000000104b1d28f chromedriver + 4911759
+18  libsystem_pthread.dylib             0x00007ff803845259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff803840c7b thread_start + 15
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Firefox&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230517 13:26:30.127" level="INFO">Opening url 'https://robotsparebinindustries.com/'</msg>
+<status status="PASS" starttime="20230517 13:26:24.628" endtime="20230517 13:26:31.529"/>
+</kw>
+<status status="PASS" starttime="20230517 13:26:24.625" endtime="20230517 13:26:31.531"/>
+</kw>
+<status status="PASS" starttime="20230517 13:26:24.621" endtime="20230517 13:26:31.532"/>
+</test>
+<doc>Insert the sales data for the week and export it as a PDF.</doc>
+<status status="PASS" starttime="20230517 13:26:23.707" endtime="20230517 13:26:31.537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
