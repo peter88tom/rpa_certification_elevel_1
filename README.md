@@ -43,3 +43,22 @@ Notes
     * Small robots are made of `settings, tasks and keywords`, they are placed in section, Take a loot at the `tasks.robot` file. 
     * In that file `*** Settings ***` section typically contain documentation, possibly some libraries, and references to other files.
     * `*** Tasks ***` section defines the task for the robot.
+
+
+# Chapter 4: Coding the robot
+- Try to define the task of your robot in one concise phrase
+- You can define your own keywords and call them in your task
+- Your own keywords can call other keywords. Keywordception!
+- Task should be place under the `*** Tasks ***` section
+- Keywords should be place under the `*** Keywords ***` section
+- You can get the newkeywords for your robot by adding libraries
+- The `conda.yaml` configuration file defines the packages you want to use. For example by defult, the `rfpaframework` package is already defined in the `conda.yaml` file. If you want to add more packages you can add them in the `conda.yaml` file.
+- Libraries add new capabilities to your robot. You can find libraries [here](https://robocorp.com/docs/courses/beginners-course/getting-to-the-intranet#fantastic-libraries-and-where-to-find-them)
+- Libraries are added in the `*** Settings ***` section of your `.robot` file
+- You can use the interactive console to find libraries and keywords. You can open interactive console by clicking `Load in interactive console` under `*** Keywords ***` section.
+- You can load and run keywords directly in interactive console. Run it by clicking its name. Edit the keyword. Load the keyword in interactive console.
+- You can view keyword documentation in the editor or the interactive console using keyboard shortcuts
+- Testing your robots often, even after each edit, gives you continous feedback on how your robot functions.
+- You can open a browser with the `Open Available Browser` keyword by giving it the URL you want to open as an argument
+- Indentation is important. [You can configur your VS code editor do the auto-format after every save](https://robocorp.com/docs/courses/beginners-course/getting-to-the-intranet#defining-our-task)
+- Auto-completion and documentation can be toggled with `Control-Space`(macOS) or `Ctrl+Space`(Windows)
