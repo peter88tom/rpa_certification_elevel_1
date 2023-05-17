@@ -62,3 +62,15 @@ Notes
 - You can open a browser with the `Open Available Browser` keyword by giving it the URL you want to open as an argument
 - Indentation is important. [You can configur your VS code editor do the auto-format after every save](https://robocorp.com/docs/courses/beginners-course/getting-to-the-intranet#defining-our-task)
 - Auto-completion and documentation can be toggled with `Control-Space`(macOS) or `Ctrl+Space`(Windows)
+
+
+# Chapter 5: Making the robot interact with the browser
+The robot needs to know their selectors. Think of a selector as the street address for an element, such as the username field on the RobotSpareBin intranet login page.
+
+These selectors along with their name and other instructions are stored in locators, in a file called locators.json, from which they can be referenced to in the code or used directly as in-line selectors.
+
+- You can use the `Input Text` keyword from `RPA.Browser.Selenium` library to fill text input fields
+- You can tell your robots which elements in a webpages to act on by writing locator( or selector)
+- You should `Input Password` keyword to fill password fields
+- You should not write or commit credentials direct into your project
+- Learning how to find and interact with the web elements is the bread and butter of the web automation

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230517 16:40:14.912" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/r00t/.vscode/extensions/robocorp.robotframework-lsp-1.10.1/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="input Text">
+<arg>alias:Username</arg>
+<arg>maria</arg>
+<msg timestamp="20230517 16:40:15.195" level="FAIL">No keyword with name 'input Text' found.</msg>
+<status status="FAIL" starttime="20230517 16:40:15.195" endtime="20230517 16:40:15.195"/>
+</kw>
+<kw name="Input Password">
+<arg>alias:Password</arg>
+<arg>thoushallnotpass</arg>
+<status status="NOT RUN" starttime="20230517 16:40:15.196" endtime="20230517 16:40:15.196"/>
+</kw>
+<kw name="Click Element">
+<arg>alias:LoginButton</arg>
+<status status="NOT RUN" starttime="20230517 16:40:15.197" endtime="20230517 16:40:15.197"/>
+</kw>
+<status status="PASS" starttime="20230517 16:40:14.935" endtime="20230517 16:40:27.149"/>
+</kw>
+<status status="PASS" starttime="20230517 16:40:14.935" endtime="20230517 16:40:27.151"/>
+</test>
+<status status="PASS" starttime="20230517 16:40:14.913" endtime="20230517 16:40:27.153"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

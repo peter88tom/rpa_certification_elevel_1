@@ -1,0 +1,23 @@
+{
+    "LoginButton": {
+        "screenshot": null,
+        "source": "https://robotsparebinindustries.com/#/",
+        "strategy": "css",
+        "type": "browser",
+        "value": ".btn"
+    },
+    "Password": {
+        "screenshot": null,
+        "source": "https://robotsparebinindustries.com/#/",
+        "strategy": "id",
+        "type": "browser",
+        "value": "password"
+    },
+    "Username": {
+        "screenshot": null,
+        "source": "https://robotsparebinindustries.com/#/",
+        "strategy": "id",
+        "type": "browser",
+        "value": "username"
+    }
+}
