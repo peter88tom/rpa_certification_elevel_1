@@ -107,3 +107,15 @@ In this chapter we teach the robot how to read the data from the Excel file and 
 - You can open and close Excel files with `Open Workbook` and `Close Workbook` keywords
 - You can [loop](https://robocorp.com/docs/languages-and-frameworks/robot-framework/for-loops) over a variable with the `FOR ... IN` syntax.
 - There are many useful automation libraries available
+
+
+# Chapter 9: Making the robot collect the results
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/collecting-the-results)
+
+In this chapter we teach the robot to get the results of sales summary by taking the screenshot of a div where the results have been displayed in the HTML page and save the screenshot.
+- The `Screenshot` keyword of the `Selenium` library takes screenshots of the elements.
+- Knowing how to use locators gets you a long way when automating web applications.
+- There are many types of locators. Choose a good one for your use case.
+- The `${OUTPUT_DIR}` runtime variable represents the robot output director
+- The `${/}` built-in variable represents the path separator for the current operating system.
+- The `output` folder is where we should put files that our robot generates
