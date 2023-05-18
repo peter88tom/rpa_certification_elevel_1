@@ -74,3 +74,10 @@ These selectors along with their name and other instructions are stored in locat
 - You should `Input Password` keyword to fill password fields
 - You should not write or commit credentials direct into your project
 - Learning how to find and interact with the web elements is the bread and butter of the web automation
+
+
+# Chapter 6: Making the robot fill the form after login
+- The `Click Button` keyword can click on buttons using the lable as the locator
+- Call the `Wait Until Page Contains Element` keyword to wait before proceeding to avoid failures due to the robot advancing too fast
+- Hard coding data is an acceptable practice for making progress and finding potential technical blockers faster
+- Take small steps. Iterate often
