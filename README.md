@@ -130,3 +130,9 @@ In this chapter wet teach the robot how to turn HTML table into the PDF
 - We create a PDF with the HTML content of the table
 - You ca use the `Get Element Attribute` keyword from the `RPA.Browser.Selenium` library to get the actual HTML markup of any element using the `outerHTML` attribute
 - You can create a PDF file from HTML content using the `RPA.PDF` library and the `Html to Pdf` keyword.
+
+# Chapter 11: Making the robot logout and close the browser
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/logging-out-and-closing-the-browser)
+
+In this chapter we teach the robot to log out and close the browser after all task are done
+- The `[Teardown]` keyword ensures your process does not leave a mess behind. Such as an open browser.
