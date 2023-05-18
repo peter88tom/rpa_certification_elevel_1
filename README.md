@@ -96,3 +96,14 @@ In this chapter we learn to make the robot to Download an excel file from remote
 - You can use the `Dowload` keyword to easily download remote files to your local computer
 - The `Download` keyword can be configured to overwrite an existing files of the same name if found.
 - The robot still looks human-readable'ish
+
+# Chapter 8: Making the robot read data from the Excel file and do something with it
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/filling-in-the-sales-form-using-excel-data)
+
+In this chapter we teach the robot how to read the data from the Excel file and insert those data into the HTML form
+
+- You can use the `RPA.Excel.Files` library to work with Excel files. No Excel required
+- You can provide arguments to your keywords
+- You can open and close Excel files with `Open Workbook` and `Close Workbook` keywords
+- You can [loop](https://robocorp.com/docs/languages-and-frameworks/robot-framework/for-loops) over a variable with the `FOR ... IN` syntax.
+- There are many useful automation libraries available
