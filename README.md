@@ -116,6 +116,6 @@ In this chapter we teach the robot to get the results of sales summary by taking
 - The `Screenshot` keyword of the `Selenium` library takes screenshots of the elements.
 - Knowing how to use locators gets you a long way when automating web applications.
 - There are many types of locators. Choose a good one for your use case.
-- The `${OUTPUT_DIR}` runtime variable represents the robot output director
-- The `${/}` built-in variable represents the path separator for the current operating system.
+- The `${OUTPUT_DIR}` runtime variable represents the robot output director. [List of runtime variables](https://robocorp.com/docs/languages-and-frameworks/robot-framework/variables#runtime-variables)
+- The `${/}` built-in variable represents the path separator for the current operating system. [List of built-in variables](https://robocorp.com/docs/languages-and-frameworks/robot-framework/variables#built-in-variables)
 - The `output` folder is where we should put files that our robot generates
