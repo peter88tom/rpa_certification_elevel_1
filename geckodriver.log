@@ -2103,3 +2103,19 @@ JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't
 JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://robotsparebinindustries.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://robotsparebinindustries.com."
+1684381830050	geckodriver	INFO	Listening on 127.0.0.1:63127
+1684381830558	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/s2/mdp_psss6v9glksl88xj6czr0000gn/T/rust_mozprofilenEqegm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684381831365	Marionette	INFO	Marionette enabled
+1684381831749	Marionette	INFO	Listening on port 63147
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 63147
+WebDriver BiDi listening on ws://127.0.0.1:63128
+1684381831960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:63128/devtools/browser/3e81b176-c65f-44f6-83fd-a247a9512b3d
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://robotsparebinindustries.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://robotsparebinindustries.com."

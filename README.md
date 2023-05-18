@@ -1,6 +1,6 @@
 # Chapter 1: RPA certification level I: Beginner's course (VS Code)
 
-Notes
+[Link to course](https://robocorp.com/docs/courses/beginners-course)
 
 - Before automating a process, it's a good idea to understand and then document it.
 - A [**Process Definition Document**](https://robocorp.com/docs/courses/implementing-rpa-robots/process-definition-document#download-our-template-for-your-pdd-documents) is an example of a traditional heavy-weight way to describe a process
@@ -10,14 +10,15 @@ Notes
 
 # Chapter 2: Setup vs code with Robocorp code extension
 
-Notes
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/set-up-robocorp-lab)
 
 - [Sign up for the Robocorp account](https://id.robocorp.com/signup)
 - [Install code  Robocorp code extension](https://marketplace.visualstudio.com/items?itemName=robocorp.robocorp-code) and [Robot Framework Language Server Extension](https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp)
 
 
 # Chapter 3: Introduction to robots
-Notes
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/your-first-robot)
+
 - Robot is a folder or a zip file packaged in a specific way that containsn everything to run the automation
 
 - Robot structure consist of:
@@ -46,6 +47,8 @@ Notes
 
 
 # Chapter 4: Coding the robot
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/getting-to-the-intranet)
+
 - Try to define the task of your robot in one concise phrase
 - You can define your own keywords and call them in your task
 - Your own keywords can call other keywords. Keywordception!
@@ -65,6 +68,8 @@ Notes
 
 
 # Chapter 5: Making the robot interact with the browser
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/logging-in)
+
 The robot needs to know their selectors. Think of a selector as the street address for an element, such as the username field on the RobotSpareBin intranet login page.
 
 These selectors along with their name and other instructions are stored in locators, in a file called locators.json, from which they can be referenced to in the code or used directly as in-line selectors.
@@ -77,7 +82,17 @@ These selectors along with their name and other instructions are stored in locat
 
 
 # Chapter 6: Making the robot fill the form after login
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/filling-in-the-sales-form)
 - The `Click Button` keyword can click on buttons using the lable as the locator
 - Call the `Wait Until Page Contains Element` keyword to wait before proceeding to avoid failures due to the robot advancing too fast
 - Hard coding data is an acceptable practice for making progress and finding potential technical blockers faster
 - Take small steps. Iterate often
+
+# Chapter 7: Making the robot Download file from remote server
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/downloading-the-excel-file)
+
+In this chapter we learn to make the robot to Download an excel file from remote server.
+- You can use the `RPA.HTTP` library, part of the  `rpaframework` collection of open-source automation libraries, to interact with remote servers
+- You can use the `Dowload` keyword to easily download remote files to your local computer
+- The `Download` keyword can be configured to overwrite an existing files of the same name if found.
+- The robot still looks human-readable'ish
