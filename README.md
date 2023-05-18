@@ -119,3 +119,14 @@ In this chapter we teach the robot to get the results of sales summary by taking
 - The `${OUTPUT_DIR}` runtime variable represents the robot output director. [List of runtime variables](https://robocorp.com/docs/languages-and-frameworks/robot-framework/variables#runtime-variables)
 - The `${/}` built-in variable represents the path separator for the current operating system. [List of built-in variables](https://robocorp.com/docs/languages-and-frameworks/robot-framework/variables#built-in-variables)
 - The `output` folder is where we should put files that our robot generates
+
+# Chapter 10: Making the robot generate a PDF out of HTML table
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/creating-pdf)
+
+In this chapter wet teach the robot how to turn HTML table into the PDF
+
+- We isolate the part of the page that contains the sales table
+- We assign the content(HTML markup) of that part of the page to a variable
+- We create a PDF with the HTML content of the table
+- You ca use the `Get Element Attribute` keyword from the `RPA.Browser.Selenium` library to get the actual HTML markup of any element using the `outerHTML` attribute
+- You can create a PDF file from HTML content using the `RPA.PDF` library and the `Html to Pdf` keyword.

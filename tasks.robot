@@ -4,6 +4,7 @@ Documentation       Insert the sales data for the week and export it as a PDF.
 Library             RPA.Browser.Selenium    auto_close=${FALSE}
 Library             RPA.HTTP
 Library             RPA.Excel.Files
+Library             RPA.PDF
 
 
 *** Tasks ***
@@ -13,6 +14,7 @@ Insert the sales data for the week and export it as a PDF
     Download the Excel file
     Fill the form using the data from the excel file
     Collect the results
+    Export the table as a PDF
 
 
 *** Keywords ***
@@ -46,3 +48,8 @@ Fill the form using the data from the excel file
 
 Collect the results
     Screenshot    css:div.sales-summary    ${OUTPUT_DIR}${/}sales_summary.png
+
+Export the table as a PDF
+    Wait Until Element Is Visible    id:sales-results
+    ${sales_results_html}=    Get Element Attribute    id:sales-results    outerHTML
+    Html To Pdf    ${sales_results_html}    ${OUTPUT_DIR}${/}sales_results.pdf
