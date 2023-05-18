@@ -136,3 +136,25 @@ In this chapter wet teach the robot how to turn HTML table into the PDF
 
 In this chapter we teach the robot to log out and close the browser after all task are done
 - The `[Teardown]` keyword ensures your process does not leave a mess behind. Such as an open browser.
+
+
+# Chapter 12: Running the robot in Control Room
+[Link to chapter](https://robocorp.com/docs/courses/beginners-course/running-in-robocorp-cloud)
+
+In this chapter we deployed the robot to cloud and make it run in a cloud instead on our VS code.
+
+There are two ways to publish the robot to [Control Room](https://id.robocorp.com/login):
+1. Upload directly to [Control Room](https://id.robocorp.com/login). The robots can be scheduled, run manually or be set up as assistants. [Learn how configure stuffs in Control Room](https://robocorp.com/docs/courses/beginners-course/running-in-robocorp-cloud#logging-into-control-room)
+2. Synchronize robots with `Control Room` via `Version control` such as Github or GitLab. This works well for robots developed in VS code or Automation Studio. [Learn more how to use version control and Control Room](https://robocorp.com/docs/courses/software-robot-project-workflow/setting-up-a-version-control-repository) 
+
+
+More details on this chapter
+- You can run robots in Control Room with push of a button
+- You need to upload your robot's code to Control Room
+- You need to create a Process to run your robots.
+- A robot step can be run in multiple processes
+- You need to select an unattended worker for your robot step when you add it to a process
+- A "unattended workder" is the actual computer that will execute the robot. It can be a Docker container in the cloud or a physical machine running the Robocorp Workforce Agent.
+- You can schedule your processes in Control Room to run a specific intervals automatically.
+- Robocorp Workforce Agent can be used to run your robots on your any machine.
+- Robot Assistants can work together with humans to complete automated taks.
